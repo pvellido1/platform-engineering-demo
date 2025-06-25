@@ -1,0 +1,8 @@
+configs:
+- id: ${{ values.projectName }}-${{ values.teamIdentifier }}-${{ values.releaseStage }}_dashboard
+  config:
+    name: Service dashboard
+    template: dashboard.json
+    skip: false
+  type:
+    api: dashboard

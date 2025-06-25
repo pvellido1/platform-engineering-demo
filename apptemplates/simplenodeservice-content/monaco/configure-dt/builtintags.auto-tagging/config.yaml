@@ -1,0 +1,11 @@
+configs:
+- id: ${{ values.projectName }}-${{ values.teamIdentifier }}-${{ values.releaseStage }}_dashboard
+  config:
+    template: tag.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOnRhZ3MuYXV0by10YWdnaW5nAAZ0ZW5hbnQABnRlbmFudAAkYWY5MmUxNTYtNDNkNS0zOGQzLWExNTYtNThlYmVkZGNmMGVkvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:tags.auto-tagging
+      schemaVersion: 1.0.17
+      scope: environment

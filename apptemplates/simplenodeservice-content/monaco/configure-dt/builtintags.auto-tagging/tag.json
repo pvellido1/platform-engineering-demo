@@ -1,0 +1,22 @@
+{
+  "name": "${{ values.projectName }}-${{ values.teamIdentifier }}-${{ values.releaseStage }}_tag",
+  "rules": [
+    {
+      "enabled": true,
+      "valueNormalization": "Leave text as-is",
+      "type": "ME",
+      "attributeRule": {
+        "entityType": "PROCESS_GROUP",
+        "conditions": [
+          {
+            "key": "PROCESS_GROUP_TECHNOLOGY",
+            "operator": "CONTAINS",
+            "enumValue": "${{ values.projectName }}"
+          }
+        ],
+        "pgToHostPropagation": true,
+        "pgToServicePropagation": true
+      }
+    }
+  ]
+}
